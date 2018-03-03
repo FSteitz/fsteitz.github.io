@@ -1,0 +1,12 @@
+*.yaml text
+*.yml text
+*.scss text
+*.html text
+*.css text
+*.xml text
+*.svg text
+*.js text
+*.ts text
+
+*.gitattributes text
+*.gitignore text

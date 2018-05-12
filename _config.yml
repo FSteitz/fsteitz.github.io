@@ -7,4 +7,4 @@ description: > # this means to ignore newlines until "baseurl:"
 url: "http://www.steitz.online"
 baseurl: ""
 
-theme: jekyll-theme-hacker
+theme: jekyll-theme-midnight

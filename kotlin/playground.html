@@ -38,8 +38,19 @@ description: A quick and easy way to experiment with Kotlin online without havin
   <div>
     <code data-target-platform="js">
       fun main(args : Array&lt;String&gt;) {
-        println("Hello world!")
+        alert("Hello World!")
+        console.log("Hello World!")
       }
+
+      // Serves sort of like a header declaration. The keyword 'external' tells Kotlin that the
+      // actual implementation is provided by the developer or the platform. In this case it's
+      // Window.alert().
+      external fun alert(message: String)
+
+      // Or Window.console. Execute this code snippet and have a look in your web browser's
+      // script console. The type 'dynamic' is only available for the JavaScript platform and
+      // basically disables any type check for this value.
+      external val console: dynamic;
     </code>
   </div>
 

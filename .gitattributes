@@ -1,12 +1,16 @@
-*.yaml text
-*.yml text
-*.scss text
-*.html text
-*.css text
-*.xml text
-*.svg text
-*.js text
-*.ts text
+*.yaml          text
+*.yml           text
+*.scss          text
+*.html          text
+*.css           text
+*.xml           text
+*.svg           text
+*.js            text
+*.md            text
 
 *.gitattributes text
-*.gitignore text
+*.gitignore     text
+
+CNAME           text
+Gemfile         text
+Gemfile.lock    text

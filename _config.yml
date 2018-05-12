@@ -7,6 +7,15 @@ description: > # this means to ignore newlines until "baseurl:"
 url: "http://www.steitz.online"
 baseurl: ""
 
+# Exclusions
+exclude: [
+  # Files
+  Gemfile,
+  Gemfile.lock,
+  LICENSE.md,
+  README.md,
+]
+
 plugins:
 - jekyll-last-modified-at
 - jekyll-sitemap

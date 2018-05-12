@@ -23,8 +23,6 @@
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
           <hr>
-          <span class="credits left">Maintained by <a href="{{ site.github.owner_url }}" target="_blank">Florian Steitz</a></span>
-          <span class="credits right">Hosted on GitHub Pages</span>
         </div>
 
         {{ content }}
@@ -33,7 +31,13 @@
       <footer>
         <hr>
         <span class="credits left">Copyright &copy; {{ site.time | date: '%Y' }} <a href="{{ site.github.owner_url }}" target="_blank">Florian Steitz</a></span>
-        <span class="credits right">Backend servers provided by <a href="https://blog.jetbrains.com/kotlin/2018/04/embedding-kotlin-playground/" target="_blank">JetBrains</a></span>
+        <span class="credits right">
+          {% if page.footer_credit_type == "jetbrains" %}
+            {% include footer/credit_jetbrains.html %}
+          {% else %}
+            {% include footer/credit_github.html %}
+          {% endif %}
+        </span>
       </footer>
     </div>
 

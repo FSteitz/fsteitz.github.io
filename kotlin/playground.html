@@ -1,16 +1,29 @@
 ---
 layout: default
+title: Kotlin Playground
+description: A quick and easy way to experiment with Kotlin online without having to install anything. Just change the code and run it!
 ---
 <div class="kotlin-playground">
   <h2>Kotlin to Java</h2>
+  <p>Code targeting the Java platform supports all language features and APIs the JDK provides.</p>
   <code data-target-platform="java">
     fun main(args : Array&lt;String&gt;) {
       println("Hello world!")
     }
   </code>
+
   <br />
   <br />
+
   <h2>Kotlin to JavaScript</h2>
+  <p>
+    Code targeting web browsers does not support APIs provided by the JDK unless they've been re-implemented
+    for the JavaScript platform. But any JavaScript API can be called. See
+    <a href="https://kotlinlang.org/docs/tutorials/javascript/working-with-javascript.html" target="_blank">here</a>
+    and
+    <a href="https://kotlinlang.org/docs/reference/js-interop.html" target="_blank">here</a>
+    for more information.
+  </p>
   <code data-target-platform="js">
     fun main(args : Array&lt;String&gt;) {
       println("Hello world!")

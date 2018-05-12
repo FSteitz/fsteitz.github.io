@@ -6,20 +6,22 @@ description: A quick and easy way to experiment with Kotlin online without havin
 <div class="kotlin-playground">
   <h2>Kotlin to Java</h2>
   <p>Code targeting the Java platform supports all language features and APIs the JDK provides.</p>
-  <code data-target-platform="java">
-    import java.util.Arrays
-    import java.util.stream.Collectors
+  <div>
+    <code data-target-platform="java">
+      import java.util.Arrays
+      import java.util.stream.Collectors
 
-    fun main(args : Array&lt;String&gt;) {
-      // How one might do it with plain Java APIs
-      val javaWords = Arrays.asList("hello", "world", "in", "java")
-      System.out.println(javaWords.stream().collect(Collectors.joining(" ")))
+      fun main(args : Array&lt;String&gt;) {
+        // How one might do it with plain Java APIs
+        val javaWords = Arrays.asList("hello", "world", "in", "java")
+        System.out.println(javaWords.stream().collect(Collectors.joining(" ")))
 
-      // How one might do the same with Kotlin APIs
-      val kotlinWords = listOf("hello", "world", "in", "kotlin")
-      println(kotlinWords.joinToString(separator = " "))
-    }
-  </code>
+        // How one might do the same with Kotlin APIs
+        val kotlinWords = listOf("hello", "world", "in", "kotlin")
+        println(kotlinWords.joinToString(separator = " "))
+      }
+    </code>
+  </div>
 
   <br />
   <br />
@@ -33,11 +35,13 @@ description: A quick and easy way to experiment with Kotlin online without havin
     <a href="https://kotlinlang.org/docs/reference/js-interop.html" target="_blank">here</a>
     for more information.
   </p>
-  <code data-target-platform="js">
-    fun main(args : Array&lt;String&gt;) {
-      println("Hello world!")
-    }
-  </code>
+  <div>
+    <code data-target-platform="js">
+      fun main(args : Array&lt;String&gt;) {
+        println("Hello world!")
+      }
+    </code>
+  </div>
 
   <script src="https://unpkg.com/kotlin-playground@1" data-selector="code"></script>
 </div>

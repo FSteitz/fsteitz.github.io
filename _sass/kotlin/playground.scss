@@ -1,7 +1,17 @@
 .kotlin-playground {
   width: 100%;
 
+  > div {
+    background: #f7f7f7;
+    width: 100%;
+  }
+
   pre {
     box-shadow: none;
+  }
+
+  .code-output {
+    padding-bottom: 15px;
+    padding-left: 15px;
   }
 }

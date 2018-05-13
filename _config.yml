@@ -21,3 +21,4 @@ plugins:
 - jekyll-sitemap
 
 theme: jekyll-theme-midnight
+google_analytics_id: UA-92535396-2

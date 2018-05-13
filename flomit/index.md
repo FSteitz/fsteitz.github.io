@@ -1,6 +1,8 @@
 ---
+layout: default
 title: flomit
 description: flomit was a german company providing IT services to small and medium-sized enterprises in and around Koblenz. It was founded in 2017 and dissolved in 2018.
+show_back_link: true
 ---
 
 ## A Short Venture

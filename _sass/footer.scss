@@ -1,36 +1,15 @@
-footer .credits {
-  font-size: 11px;
-  font-family: 'OpenSansRegular', "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
-  color: #696969;
-  margin-top: -10px;
+@import 'common';
 
-  &.left {
-    float: left;
-  }
+footer {
+  @extend %site-frame-element;
+  padding: 20px 0 20px 0;
+  border-top: $site-frame-border;
+  box-shadow: 0 -1px 3px rgba(0,0,0,.25);
 
-  &.right {
-    float: right;
-  }
-}
-
-@media print, screen and (max-width: 720px) {
-  footer {
-    .credits {
-      display: block;
-      width: 100%;
-      line-height: 30px;
-      text-align: center;
-
-      .left {
-        float: none;
-        display: block;
-      }
-
-      .right {
-        float: none;
-        display: block;
-      }
-    }
+  section {
+    width: 100%;
+    height: 100%;
+    max-width: $content-max-width;
+    margin: 0 auto 0 auto;
   }
 }

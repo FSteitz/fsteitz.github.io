@@ -32,32 +32,31 @@ show_back_link: false
     </div>
 
     <div class="wrapper">
-      <section>
+      <section class="content">
         <div id="title">
           <h1>{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
           <p>{{ page.description | default: site.description | default: site.github.project_tagline }}</p>
           <hr>
           {% if page.show_back_link %}
-            <span class="back-link left">
+            <span class="meta-info left">
               <a href="/">&larr; Back</a>
             </span>
           {% endif %}
+          <span class="meta-info right">
+            {% if page.footer_credit_type == "jetbrains" %}
+              {% include footer/credit_jetbrains.html %}
+            {% else %}
+              {% include footer/credit_github.html %}
+            {% endif %}
+          </span>
         </div>
-
         {{ content }}
       </section>
-
-      <footer>
-        <hr>
-        <span class="credits left">Copyright &copy; {{ site.time | date: '%Y' }} <a href="{{ site.github.owner_url }}" target="_blank">Florian Steitz</a></span>
-        <span class="credits right">
-          {% if page.footer_credit_type == "jetbrains" %}
-            {% include footer/credit_jetbrains.html %}
-          {% else %}
-            {% include footer/credit_github.html %}
-          {% endif %}
-        </span>
-      </footer>
     </div>
+    <footer>
+      <section>
+        <span class="meta-info centered">Copyright &copy; {{ site.time | date: '%Y' }} <a href="{{ site.github.owner_url }}" target="_blank">Florian Steitz</a></span>
+      </section>
+    </footer>
   </body>
 </html>

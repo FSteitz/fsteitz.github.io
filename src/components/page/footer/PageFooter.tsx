@@ -11,7 +11,7 @@ export const PageFooter = () => {
                 <p className="font-semibold">© Copyright {new Date().getFullYear()} {config.website.copyright}</p>
                 <div className="flex flex-row items-center justify-between gap-3">
                     <Link className="hover:text-sky-600" href="https://github.com/FSteitz"><FaGithub size={24} /></Link>
-                    <Link className="hover:text-sky-600" href="https://bsky.app/profile/xardex.dev"><FaBluesky size={24} /></Link>
+                    <Link className="hover:text-sky-600 hidden" href="https://bsky.app/profile/xardex.dev"><FaBluesky size={24} /></Link>
                     <Link className="hover:text-sky-600" href="https://www.linkedin.com/in/florian-steitz-2242aa6b"><FaLinkedin size={24} /></Link>
                     <Link className="hover:text-sky-600" href="https://www.xing.com/profile/Florian_Steitz2"><FaXing size={24} /></Link>
                 </div>

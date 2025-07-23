@@ -1,10 +1,13 @@
 import { config } from "@/config";
 
 import { BlogPostPreviewGrid } from "@/components/blog/BlogPostPreviewGrid";
+import { PageContentPagination } from "@/components/page/content/PageContentPagination";
 
 import { BlogPostCache } from "@/lib/blog-post-cache";
+import { BLOG_BASE_PATH } from "@/lib/constants";
+import { calculateTotalPages, toPagination } from "@/lib/utils";
 
-export async function LatestBlogPosts({ postLimit, title }: { postLimit: number, title?: string }) {
+export async function LatestBlogPosts({ postLimit, page, title }: { postLimit: number, page?: number, title?: string }) {
   const posts = await BlogPostCache.getAllPosts();
   if (!posts || posts.length === 0) {
     return <div>No blog posts found</div>;
@@ -21,6 +24,9 @@ export async function LatestBlogPosts({ postLimit, title }: { postLimit: number,
         <h2 className="h-20 text-6xl font-semi-bold text-center mb-8">{title}</h2>
       }
       <BlogPostPreviewGrid posts={posts.slice(0, postLimit)} tileMaxWidth={96} />
+      {page &&
+        <PageContentPagination pagePath={`/${BLOG_BASE_PATH}`} pagination={toPagination(page, postLimit, calculateTotalPages(posts.length, postLimit))} />
+      }
     </section>
   );
 }

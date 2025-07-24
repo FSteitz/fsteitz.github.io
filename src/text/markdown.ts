@@ -50,6 +50,12 @@ I invite you to explore my collection of small tools, tutorials, and insights, a
 Let's embark on this exciting journey together!
 `;
 
+const blogRssFeed = `For my blog, there is an [RSS feed](/feeds/blog.xml) that allows you to easily follow my latest posts.
+To use the feed, you will need an RSS reader.
+
+[Subscribe](/rss) to my feed and never miss any of my exciting posts again!
+`;
+
 export const markdownContent = {
     page: {
         introduction: {
@@ -58,5 +64,8 @@ export const markdownContent = {
             toolsPage: toolsPageIntroduction,
             aboutMePage: aboutMePageIntroduction
         }
-    }
+    },
+    rss: {
+        blog: blogRssFeed
+    },
 };

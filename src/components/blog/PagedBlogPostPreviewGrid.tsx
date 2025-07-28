@@ -9,7 +9,7 @@ import { BlogPostCache, CachedPost } from "@/lib/blog-post-cache";
 import { BLOG_BASE_PATH } from "@/lib/constants";
 import { calculateTotalPages, toPagination } from "@/lib/utils";
 
-export async function LatestBlogPosts({ posts, postLimit, page, title, additionalPath = "" }: { posts?: CachedPost[], postLimit: number, page?: number, title?: string, additionalPath?: string }) {
+export async function PagedBlogPostPreviewGrid({ posts, postLimit, page, title, additionalPath = "" }: { posts?: CachedPost[], postLimit: number, page?: number, title?: string, additionalPath?: string }) {
   const blogPosts = posts || await BlogPostCache.getAllPosts();
   if (!blogPosts || blogPosts.length === 0) {
     return <div>No blog posts found</div>;

@@ -6,7 +6,7 @@ import { FaList } from "react-icons/fa";
 
 import { Rss } from "lucide-react";
 
-import { LatestBlogPosts } from "@/components/blog/LatestBlogPosts";
+import { PagedBlogPostPreviewGrid } from "@/components/blog/PagedBlogPostPreviewGrid";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 import { Button } from "@/components/ui/button";
@@ -29,7 +29,7 @@ export const createPageContent = async (tagName: string, page: number) => {
                     </Link>
                 </Button>
             </div>
-            <LatestBlogPosts posts={result.posts as CachedPost[]} postLimit={BLOG_POSTS_PER_PAGE} page={page} additionalPath={`${TAG_PATH_PART}/${tagName}`} />
+            <PagedBlogPostPreviewGrid posts={result.posts as CachedPost[]} postLimit={BLOG_POSTS_PER_PAGE} page={page} additionalPath={`${TAG_PATH_PART}/${tagName}`} />
         </PageFrame>
     );
 };

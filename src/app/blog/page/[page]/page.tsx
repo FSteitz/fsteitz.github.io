@@ -1,6 +1,6 @@
 import { config } from "@/config";
 
-import { LatestBlogPosts } from "@/components/blog/LatestBlogPosts";
+import { PagedBlogPostPreviewGrid } from "@/components/blog/PagedBlogPostPreviewGrid";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
@@ -25,7 +25,7 @@ export default async function BlogPage(props: { params: Promise<PagePathParam> }
     return (
         <PageFrame pageTitle={`Empowering Your Tech Journey: Discover Tutorials and Insights on Technologies${maybeAddPageIndicator(pageNumber)}`} pageSubTitle={`by ${config.website.name}`}>
             <MarkdownProse markdownContent={markdownContent.page.introduction.blogPage} />
-            <LatestBlogPosts postLimit={POST_LIMIT_PER_PAGE} page={pageNumber} />
+            <PagedBlogPostPreviewGrid postLimit={POST_LIMIT_PER_PAGE} page={pageNumber} />
         </PageFrame>
     );
 }

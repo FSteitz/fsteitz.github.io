@@ -14,6 +14,25 @@ Whether you're a beginner eager to learn the ropes or an experienced developer l
 Join me as we explore the fascinating world of technology together! Explore the articles and writings I've crafted, and together, let's enhance our skills and knowledge in this dynamic field. Welcome aboard!
 `;
 
+const blogTagPageIntroduction = `Here, you will find all blog posts tagged with **#__TAG__**.
+Discover captivating articles, insightful tutorials, and inspiring content from the world of technology and software engineering.
+
+Additionally, I share personal recommendations for essential tools and resources designed to expand your skill set and support you on your coding journey.
+
+Let my passion for technology and software development inspire you as you explore valuable insights and recommendations that will enrich your daily programming experience!
+`;
+
+const blogTagPageBeyondOneIntroduction = `Here, you will find blog posts on __PAGE__ tagged with **#__TAG__**.
+Discover captivating articles, insightful tutorials, and inspiring content from the world of technology and software engineering.
+`;
+
+const blogTagListPageIntroduction = `Here, you can explore all the topics covered in my blog, organized by hashtags for your convenience.
+
+Discover a wide range of captivating articles, insightful tutorials, and inspiring content from the world of technology and software engineering, all categorized for easy navigation.
+
+Let my passion for technology and software development guide you as you navigate through these hashtags, uncovering valuable insights and recommendations to enrich your daily programming experience!
+`;
+
 const toolsPageIntroduction = `Welcome to my dedicated space for software development and technology!
 Here, I showcase a selection of small tools that I've discovered or developed over the years.
 As a passionate developer with extensive experience, I believe in the power of sharing knowledge and resources.
@@ -61,6 +80,9 @@ export const markdownContent = {
         introduction: {
             homePage: homePageIntroduction,
             blogPage: blogPageIntroduction,
+            blogTag: blogTagPageIntroduction,
+            blogTagBeyondPageOne: blogTagPageBeyondOneIntroduction,
+            blogTagList: blogTagListPageIntroduction,
             toolsPage: toolsPageIntroduction,
             aboutMePage: aboutMePageIntroduction
         }

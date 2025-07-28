@@ -38,6 +38,15 @@ export function generateStaticParamsForPagnination(totalItems: number, itemsPerP
   }));
 }
 
+export function computeIfAbsent<K, V>(map: Map<K, V>, key: K, valueProvider: () => V): V {
+  if (!map.has(key)) {
+    const value = valueProvider();
+    map.set(key, value);
+    return value;
+  }
+  return map.get(key)!;
+}
+
 export function toPageNumber(pageParam?: string): number {
   return pageParam ? parseInt(pageParam) : 1;
 }
@@ -49,3 +58,7 @@ export function maybeAddPageIndicator(page: number): string {
 export function onPageOneOrElse<R>(page: number, onPageOne: () => R, onOtherPage: () => R): R {
   return page === 1 ? onPageOne() : onOtherPage();
 }
+
+export const replacePagePlaceholders = (page: number, textOnPageOne: () => string, textOnOtherPage: () => string): string => {
+  return onPageOneOrElse(page, textOnPageOne, textOnOtherPage).replace(/__PAGE__/g, page.toString())
+};

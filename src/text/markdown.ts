@@ -1,3 +1,8 @@
+const contactPerson = `Florian Steitz  
+Kastorstr. 24  
+56068 Koblenz
+`;
+
 const homePageIntroduction = `Welcome to my personal space dedicated to software development and technology!
 As a passionate developer with many years of experience, I share my insights on various programming languages and tech topics that inspire me.
 This site features a collection of small tools and tutorials I've created or found to help others enhance their skills and navigate the ever-evolving tech landscape.
@@ -69,6 +74,56 @@ I invite you to explore my collection of small tools, tutorials, and insights, a
 Let's embark on this exciting journey together!
 `;
 
+const imprintPageIntroduction = `**Provider / Owner**
+
+${contactPerson}
+
+**Contact**
+- Phone: 017656717995
+- Email: [fsteitz.com@gmail.com](mailto:fsteitz.com@gmail.com)
+
+**Accounts on Other Websites**
+- [Github](https://github.com/FSteitz)
+- [LinkedIn](https://www.linkedin.com/in/florian-steitz-2242aa6b)
+- [Xing](https://www.xing.com/profile/Florian_Steitz2)
+
+**§ 1 Warning Notice on Content**
+
+The free and publicly accessible content of this website has been created with the utmost care.
+However, the provider of this website does not guarantee the accuracy and timeliness of the provided free and publicly accessible journalistic advice and news.
+Contributions marked by name reflect the opinion of the respective author and not always the opinion of the provider.
+Merely accessing the free and publicly accessible content does not establish any contractual relationship between the user and the provider, as there is no intention to be legally bound by the provider.
+
+**§ 2 External Links**
+
+This website contains links to third-party websites ("external links").
+These websites are the responsibility of their respective owners and providers.
+The provider of this website has checked the content of the external links for any legal violations at the time of the initial linking.
+No legal violations were apparent at that time.
+The provider has no influence on the current and future design and content of the linked pages.
+The establishment of external links does not mean that the provider adopts the content behind the reference or link as their own.
+Continuous monitoring of external links is unreasonable for the provider without concrete evidence of legal violations.
+However, upon becoming aware of legal violations, such external links will be deleted immediately.
+
+**§ 3 Copyright and Related Rights**
+
+The content published on this website is subject to German copyright and related rights.
+Any use not permitted by German copyright and related rights requires the prior written consent of the provider or the respective rights holder.
+This applies in particular to reproduction, editing, translation, storage, processing, or reproduction of content in databases or other electronic media and systems.
+Content and rights of third parties are marked as such.
+Unauthorized reproduction or distribution of individual content or complete pages is not permitted and is punishable by law.
+Only the creation of copies and downloads for personal, private, and non-commercial use is allowed.
+
+The presentation of this website in external frames is only permitted with written permission.
+
+**§ 4 Special Terms of Use**
+
+If special conditions for individual uses of this website deviate from the aforementioned paragraphs, this will be explicitly indicated at the appropriate place.
+In this case, the special terms of use apply in each individual case.
+
+**All rights reserved. Any reproduction or distribution in any medium, in whole or in part, requires the written consent of Florian Steitz.**
+`;
+
 const blogRssFeed = `For my blog, there is an [RSS feed](/feeds/blog.xml) that allows you to easily follow my latest posts.
 To use the feed, you will need an RSS reader.
 
@@ -84,7 +139,8 @@ export const markdownContent = {
             blogTagBeyondPageOne: blogTagPageBeyondOneIntroduction,
             blogTagList: blogTagListPageIntroduction,
             toolsPage: toolsPageIntroduction,
-            aboutMePage: aboutMePageIntroduction
+            aboutMePage: aboutMePageIntroduction,
+            imprintPage: imprintPageIntroduction
         }
     },
     rss: {

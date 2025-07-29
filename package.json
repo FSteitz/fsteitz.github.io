@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && npx tsx --env-file=.env ./src/build-script/rss/generate-static-rss-feed-xml.ts",
     "start": "next start",
     "lint": "next lint",
     "postbuild": "next-sitemap"
@@ -34,13 +34,16 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "@types/rss": "^0.0.32",
     "@types/sanitize-html": "^2.16.0",
     "depcheck": "^1.4.7",
     "eslint": "^9",
     "eslint-config-next": "15.4.2",
     "next-sitemap": "^4.2.3",
+    "rss": "^1.2.2",
     "schema-dts": "^1.1.5",
     "tailwindcss": "^4",
+    "tsx": "^4.20.3",
     "tw-animate-css": "^1.3.5",
     "typescript": "^5"
   }

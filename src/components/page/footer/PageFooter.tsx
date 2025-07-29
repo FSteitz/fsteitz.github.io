@@ -1,6 +1,6 @@
 import { config } from "@/config"
 
-import { IMPRINT_BASE_PATH } from "@/lib/constants"
+import { IMPRINT_BASE_PATH, PRIVACY_POLICY_BASE_PATH } from "@/lib/constants"
 
 import Link from "next/link"
 import { FaGithub, FaLinkedin, FaXing } from "react-icons/fa"
@@ -12,10 +12,13 @@ export const PageFooter = () => {
             <hr className="mx-16 mt-20 mb-12" />
             <section className="w-[80%] flex flex-row items-center justify-between mx-auto">
                 <div className="mx-auto">
-                    <h4 className="font-sans font-semibold text-xl pb-3">More Pages</h4>
+                    <h4 className="font-sans font-semibold text-xl pb-4">More Pages</h4>
                     <ul className="text-center">
                         <li className="font-semibold">
                             <Link href={`/${IMPRINT_BASE_PATH}`} className="hover:text-sky-600">Imprint</Link>
+                        </li>
+                        <li className="font-semibold pt-2">
+                            <Link href={`/${PRIVACY_POLICY_BASE_PATH}`} className="hover:text-sky-600">Privacy Policy</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,3 +1,5 @@
+import { IMPRINT_BASE_PATH, PRIVACY_SETTINGS_BASE_PATH } from "@/lib/constants";
+
 const contactPerson = `Florian Steitz  
 Kastorstr. 24  
 56068 Koblenz
@@ -124,6 +126,134 @@ In this case, the special terms of use apply in each individual case.
 **All rights reserved. Any reproduction or distribution in any medium, in whole or in part, requires the written consent of Florian Steitz.**
 `;
 
+const privacyPolicyPageContent = `The processing of your data is carried out exclusively on the basis of the applicable legal provisions, particularly the GDPR.
+On this page, you will find essential information regarding data processing on my website in the privacy policy.
+
+The following information provide you with a comprehensive overview of what happens to your personal data when you visit my website.
+Personal data includes all data that can be used to identify you personally. I strive to present this as clearly and understandably as possible.
+If you have any questions regarding data protection on my website, please feel free to contact me at any time.
+
+**Who is responsible for the content?**
+
+${contactPerson}
+
+You can find further information on the [Imprint Page](/${IMPRINT_BASE_PATH}).
+
+The protection of your personal data is my highest priority.
+I am not legally required to appoint a data protection officer, and currently, no such officer has been appointed.
+Should this change, I will announce it here.
+
+**Legal basis for the processing of your personal data**
+
+In order to offer my website and the associated services, I process personal data based on the following legal grounds:
+
+1. Explicit consent according to Article 6(1)(a) GDPR
+2. Protection of a legitimate interest according to Article 6(1)(f) GDPR
+
+If your personal data is processed based on your consent, you have the right to withdraw this consent at any time with effect for the future.
+
+If I process your data to protect a legitimate interest, you, as the affected person, have the right to object to the processing of your personal data in accordance with the provisions of Article 21 GDPR.
+
+**How is your data collected?**
+
+When you visit my website, your data is automatically collected by [Cloudflare](https://www.cloudflare.com) and [GitHub](https://pages.github.com).
+This mainly includes technical data, such as information about your web browser, your operating system, and the time of the page visit.
+The collection of this data occurs automatically as soon as you click on my website or navigate through it.
+
+**What rights do you have?**
+
+You have the right to request information about the personal data that concerns you.
+You can contact me at any time to obtain this information.
+For information requests that are not made in writing, I ask for your understanding that I may need to request proof to confirm that you are the person you claim to be.
+
+Additionally, you have the right to rectification, deletion, or restriction of processing, as long as you are legally entitled to it.
+
+Finally, you have the right to object to the processing of your data within the legal framework.
+The same applies to your right to data portability.
+
+You can adjust your options for protecting your data at any time in the [Privacy Settings](/${PRIVACY_SETTINGS_BASE_PATH}).
+
+**What are your data used for?**
+
+Some data is collected from you to ensure the error-free provision of my website.
+Additionally, other data may be used for anonymized and aggregated analysis of your usage behavior on my website.
+
+When you visit my website, personal data is processed so that the content can be displayed on your device.
+
+To correctly display the pages of my website in your web browser on your device, the IP address of the device must be processed.
+Furthermore, additional information about your device's web browser is collected.
+
+For this purpose, and in the interest of protecting a legitimate interest, the following data is logged, which I have access to:
+
+- The web browser you are using
+- The operating system you are using
+- The [referrer URL](https://de.wikipedia.org/wiki/Referrer)
+- The country associated with your IP address
+- The pages (URL paths) you visit on my website
+- The time of the server request
+- Your loading times for each individual page
+
+This data cannot be attributed to a specific person.
+There is no merging or linking of this data with other data sources.
+I reserve the right to manually review this data at a later time.
+
+Additionally, [Cloudflare](https://www.cloudflare.com) and [GitHub](https://pages.github.com) may collect additional data necessary for the provision of my website.
+However, I do not have access to this data and have no influence over its collection.
+
+**Web hosting via GitHub Pages**
+
+This website is hosted by [GitHub Pages](https://pages.github.com), a service provided by GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA.
+GitHub is a subsidiary of Microsoft Corporation.
+When accessing my website, data is produced that is stored on servers operated by GitHub in the USA.
+
+According to publicly available information, GitHub takes appropriate measures to protect your data and complies with applicable data protection regulations.
+Data processing is carried out in accordance with the provisions of the GDPR.
+
+Although GitHub's servers are located in the USA, GitHub has taken steps to ensure that data processing meets the requirements of EU data protection laws.
+For more information on data processing by GitHub, you can refer to the [GitHub Privacy Statement](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement), which covers more than just the data produced by accessing my website.
+
+The source code of my website ist located in this [GitHub repository](https://github.com/FSteitz/fsteitz.github.io).
+
+**Cloudflare**
+
+This website uses [Cloudflare](https://www.cloudflare.com), a service provided by Cloudflare, Inc., 101 Townsend St, San Francisco, CA 94107, USA.
+Cloudflare acts as a Content Delivery Network (CDN) and provides security and performance optimizations for my website.
+All requests to my website are routed through Cloudflare's servers.
+
+By using Cloudflare, data produced when accessing my website may be stored and processed on Cloudflare's servers.
+Cloudflare may collect certain information to provide the service, including IP addresses, web browser information, and other usage data.
+
+According to publicly available information, Cloudflare takes appropriate measures to comply with the GDPR.
+Data processing is carried out in accordance with applicable data protection laws, and Cloudflare has implemented suitable measures to ensure that your data is adequately protected.
+
+Please note that Cloudflare operates servers in various regions, including the USA.
+
+For more information on data processing by Cloudflare, you can visit the page [Cloudflare and GDPR compliance](https://www.cloudflare.com/trust-hub/gdpr).
+However, this describes broader data collection than what occurs through access to my website.
+
+**Analytics Tools**
+
+My website uses [Cloudflare Real User Monitoring (RUM)](https://blog.cloudflare.com/introducing-browser-insights) for anonymized analysis of the usage of my website.
+Cloudflare RUM collects information about user interactions with my website to improve performance and optimize your user experience.
+The collected data is anonymized and does not contain any personal information.
+
+You can adjust your options for protecting your data at any time in the [Privacy Settings](/${PRIVACY_SETTINGS_BASE_PATH}).
+This includes the option to disable Cloudflare RUM.
+
+**SSL/TLS Encryption**
+
+For security reasons and to protect your confidential data, my website uses SSL/TLS encryption.
+You can recognize an encrypted connection by the change in the address bar of your web browser from “http://” to “https://” and the display of a lock symbol in the address bar.
+
+Since SSL/TLS encryption is automatically enabled, the data you send to me or to [Cloudflare](https://www.cloudflare.com) or [GitHub](https://pages.github.com) cannot be read by third parties.
+
+**Technical Support:**
+
+[Florian Steitz](https://www.steitz.online) | Email: [fsteitz.com@gmail.com](mailto:fsteitz.com@gmail.com)
+
+**As of 29.07.2025**
+`;
+
 const blogRssFeed = `For my blog, there is an [RSS feed](/feeds/blog.xml) that allows you to easily follow my latest posts.
 To use the feed, you will need an RSS reader.
 
@@ -141,6 +271,9 @@ export const markdownContent = {
             toolsPage: toolsPageIntroduction,
             aboutMePage: aboutMePageIntroduction,
             imprintPage: imprintPageIntroduction
+        },
+        content: {
+            privacyPolicy: privacyPolicyPageContent
         }
     },
     rss: {

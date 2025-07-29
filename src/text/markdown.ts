@@ -268,11 +268,11 @@ export const markdownContent = {
             blogTag: blogTagPageIntroduction,
             blogTagBeyondPageOne: blogTagPageBeyondOneIntroduction,
             blogTagList: blogTagListPageIntroduction,
-            toolsPage: toolsPageIntroduction,
-            aboutMePage: aboutMePageIntroduction,
-            imprintPage: imprintPageIntroduction
+            toolsPage: toolsPageIntroduction
         },
         content: {
+            aboutMePage: aboutMePageIntroduction,
+            imprintPage: imprintPageIntroduction,
             privacyPolicy: privacyPolicyPageContent
         }
     },

@@ -8,7 +8,7 @@ import { markdownContent } from "@/text/markdown";
 export default function AboutMe() {
   return (
     <PageFrame pageTitle="About Me" pageSubTitle={`My name is ${config.website.name}`}>
-      <MarkdownProse markdownContent={markdownContent.page.introduction.aboutMePage} />
+      <MarkdownProse markdownContent={markdownContent.page.content.aboutMePage} />
     </PageFrame>
   );
 }

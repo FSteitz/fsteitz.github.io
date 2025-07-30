@@ -262,7 +262,7 @@ In my [Privacy Policy](/${PRIVACY_POLICY_BASE_PATH}), you will find more informa
 const blogRssFeed = `For my blog, there is an [RSS feed](/feeds/blog.xml) that allows you to easily follow my latest posts.
 To use the feed, you will need an RSS reader.
 
-[Subscribe](/rss) to my feed and never miss any of my exciting posts again!
+[Subscribe](/feeds/blog.xml) to my feed and never miss any of my exciting posts again!
 `;
 
 const missingConsentDecisionHint = `Your privacy settings cannot currently be changed.

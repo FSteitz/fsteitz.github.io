@@ -274,9 +274,14 @@ const cloudflareAnalyticsHint = `Cloudflare Real User Monitoring (RUM) is a tech
 The main purpose of RUM is to collect anonymized real user data without user tracking to understand your interaction with my website.
 Here are the key points:
 
-- **Performance Monitoring:** RUM captures metrics such as load times, interaction times, and other performance indicators based on your actual experiences.
-- **Optimizing Your User Experience:** By analyzing the collected data, I can make targeted improvements to enhance your user experience.
-- **Real-Time Feedback:** RUM provides real-time feedback on the performance of my website, allowing me to make timely adjustments as needed.`;
+- **Performance Monitoring**  
+RUM captures metrics such as load times, interaction times, and other performance indicators based on your actual experiences.
+
+- **Optimizing Your User Experience**  
+By analyzing the collected data, I can make targeted improvements to enhance your user experience.
+
+- **Real-Time Feedback**  
+RUM provides real-time feedback on the performance of my website, allowing me to make timely adjustments as needed.`;
 
 export const markdownContent = {
     page: {

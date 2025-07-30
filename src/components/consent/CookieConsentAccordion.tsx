@@ -11,7 +11,7 @@ export default function CookieConsentAccordion() {
             <AccordionItem value="cloudflare-rum">
                 <AccordionTrigger>Cloudflare RUM</AccordionTrigger>
                 <AccordionContent className="flex flex-col md:flex-row max-md:gap-4">
-                    <AnalyticsConsent autoAttachScript={true} className="scale-125 mt-1.5 ml-1" />
+                    <AnalyticsConsent autoAttachScript={true} className="scale-125 mt-1.5 ml-1 mr-4" />
                     <div className="pl-4 mt-[-1.4em] text-lg">
                         <Markdown>{markdownContent.hint.cloudflareAnalytics}</Markdown>
                     </div>

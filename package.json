@@ -12,7 +12,6 @@
   "dependencies": {
     "@radix-ui/react-aspect-ratio": "^1.1.7",
     "@radix-ui/react-slot": "^1.2.3",
-    "@wisp-cms/client": "^0.0.23",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "date-fns": "^4.1.0",
@@ -24,8 +23,7 @@
     "react-icons": "^5.5.0",
     "react-markdown": "^10.1.0",
     "react-share": "^5.2.2",
-    "sanitize-html": "^2.17.0",
-    "tailwind-merge": "^3.3.1"
+    "sanitize-html": "^2.17.0"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
@@ -36,12 +34,14 @@
     "@types/react-dom": "^19",
     "@types/rss": "^0.0.32",
     "@types/sanitize-html": "^2.16.0",
+    "@wisp-cms/client": "^0.0.23",
     "depcheck": "^1.4.7",
     "eslint": "^9",
     "eslint-config-next": "15.4.2",
     "next-sitemap": "^4.2.3",
     "rss": "^1.2.2",
     "schema-dts": "^1.1.5",
+    "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4",
     "tsx": "^4.20.3",
     "tw-animate-css": "^1.3.5",

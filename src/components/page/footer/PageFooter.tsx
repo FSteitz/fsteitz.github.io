@@ -1,6 +1,6 @@
 import { config } from "@/config"
 
-import { IMPRINT_BASE_PATH, PRIVACY_POLICY_BASE_PATH } from "@/lib/constants"
+import { IMPRINT_BASE_PATH, PRIVACY_POLICY_BASE_PATH, PRIVACY_SETTINGS_BASE_PATH } from "@/lib/constants"
 
 import Link from "next/link"
 import { FaGithub, FaLinkedin, FaXing } from "react-icons/fa"
@@ -19,6 +19,9 @@ export const PageFooter = () => {
                         </li>
                         <li className="font-semibold pt-2">
                             <Link href={`/${PRIVACY_POLICY_BASE_PATH}`} className="hover:text-sky-600">Privacy Policy</Link>
+                        </li>
+                        <li className="font-semibold pt-2">
+                            <Link href={`/${PRIVACY_SETTINGS_BASE_PATH}`} className="hover:text-sky-600">Privacy Settings</Link>
                         </li>
                     </ul>
                 </div>

@@ -1,4 +1,4 @@
-import { IMPRINT_BASE_PATH, PRIVACY_SETTINGS_BASE_PATH } from "@/lib/constants";
+import { IMPRINT_BASE_PATH, PRIVACY_POLICY_BASE_PATH, PRIVACY_SETTINGS_BASE_PATH } from "@/lib/constants";
 
 const contactPerson = `Florian Steitz  
 Kastorstr. 24  
@@ -254,11 +254,29 @@ Since SSL/TLS encryption is automatically enabled, the data you send to me or to
 **As of 29.07.2025**
 `;
 
+const privacySettingsPageContent = `Here you can adjust your privacy settings at any time by expanding the respective section and toggling the switch within it.
+
+In my [Privacy Policy](/${PRIVACY_POLICY_BASE_PATH}), you will find more information about the data processed by me and my service providers, as well as the purposes of the processing.
+`;
+
 const blogRssFeed = `For my blog, there is an [RSS feed](/feeds/blog.xml) that allows you to easily follow my latest posts.
 To use the feed, you will need an RSS reader.
 
 [Subscribe](/rss) to my feed and never miss any of my exciting posts again!
 `;
+
+const missingConsentDecisionHint = `Your privacy settings cannot currently be changed.
+You may not have confirmed the popup with the privacy settings yet.
+If you have, reloading this page might help.
+`;
+
+const cloudflareAnalyticsHint = `Cloudflare Real User Monitoring (RUM) is a technology designed to monitor and analyze your user experience on my website.
+The main purpose of RUM is to collect anonymized real user data without user tracking to understand your interaction with my website.
+Here are the key points:
+
+- **Performance Monitoring:** RUM captures metrics such as load times, interaction times, and other performance indicators based on your actual experiences.
+- **Optimizing Your User Experience:** By analyzing the collected data, I can make targeted improvements to enhance your user experience.
+- **Real-Time Feedback:** RUM provides real-time feedback on the performance of my website, allowing me to make timely adjustments as needed.`;
 
 export const markdownContent = {
     page: {
@@ -273,10 +291,15 @@ export const markdownContent = {
         content: {
             aboutMePage: aboutMePageIntroduction,
             imprintPage: imprintPageIntroduction,
-            privacyPolicy: privacyPolicyPageContent
+            privacyPolicy: privacyPolicyPageContent,
+            privacySettings: privacySettingsPageContent
         }
     },
     rss: {
         blog: blogRssFeed
     },
+    hint: {
+        missingConsentDecision: missingConsentDecisionHint,
+        cloudflareAnalytics: cloudflareAnalyticsHint
+    }
 };

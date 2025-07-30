@@ -8,21 +8,21 @@ import { PiHouseFill } from "react-icons/pi"
 export const PageNavigation = () => {
     return (
         <nav className="bg-[rgb(10,10,10)] w-128 h-12 rounded-4xl m-auto flex p-1 shadow-md shadow-gray-900">
-            <Link className="w-36 px-1 py-2 font-semibold border-r border-gray-700 hover:bg-gray-800 rounded-4xl flex justify-center" href="/">
+            <Link className="w-36 px-1 py-2 font-semibold border-r border-gray-700 hover:bg-sky-600 rounded-4xl flex justify-center" href="/">
                 <PiHouseFill className="w-5 h-5 mr-2" />
-                <span>Home</span>
+                <span className="leading-4.5">Home</span>
             </Link>
-            <Link className="w-36 px-1 py-2 font-semibold border-r border-gray-700 hover:bg-gray-800 rounded-4xl flex justify-center" href="/blog">
+            <Link className="w-36 px-1 py-2 font-semibold border-r border-gray-700 hover:bg-sky-600 rounded-4xl flex justify-center" href="/blog">
                 <FaBookJournalWhills className="w-4 h-4 mt-[.2rem] mr-2" />
-                <span>Blog</span>
+                <span className="leading-5">Blog</span>
             </Link>
-            <Link className="w-36 px-1 py-2 font-semibold border-r border-gray-700 hover:bg-gray-800 rounded-4xl flex justify-center" href="/tools">
+            <Link className="w-36 px-1 py-2 font-semibold border-r border-gray-700 hover:bg-sky-600 rounded-4xl flex justify-center" href="/tools">
                 <FaTools className="w-4 h-4 mt-[.2rem] mr-2" />
-                <span>Tools</span>
+                <span className="leading-5">Tools</span>
             </Link>
-            <Link className="w-36 px-1 py-2 font-semibold hover:bg-gray-800 rounded-4xl flex justify-center" href="/about-me">
+            <Link className="w-36 px-1 py-2 font-semibold hover:bg-sky-600 rounded-4xl flex justify-center" href="/about-me">
                 <IoPersonCircle className="w-6 h-6 mr-2" />
-                <span>About</span>
+                <span className="leading-5.5">About</span>
             </Link>
         </nav>
     )

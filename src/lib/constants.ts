@@ -8,6 +8,8 @@ export const BLOG_TAG_BASE_PATH = BLOG_BASE_PATH + TAG_PATH_PART;
 
 export const TOOLS_BASE_PATH = "tools";
 
+export const KOTLIN_PLAYGROUND_BASE_PATH = "kotlin/playground";
+
 export const ABOUT_ME_BASE_PATH = "about-me";
 
 export const IMPRINT_BASE_PATH = "imprint";

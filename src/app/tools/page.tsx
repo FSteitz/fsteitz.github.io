@@ -7,8 +7,10 @@ import { markdownContent } from "@/text/markdown";
 
 export default function Tools() {
   return (
-    <PageFrame pageTitle="Crafting Solutions: A Collection of Small Tools to Improve Skills and Efficiency" pageSubTitle={`by ${config.website.name}`}>
+    <PageFrame pageTitle="Discover Tools to Enhance Your Skills and Productivity: Get Started Now!" pageSubTitle={`by ${config.website.name}`}>
       <MarkdownProse markdownContent={markdownContent.page.introduction.toolsPage} />
+      <hr className="max-w-[80%] my-12 mx-auto" />
+      <MarkdownProse markdownContent={markdownContent.page.content.toolsPage3rdParty} />
     </PageFrame>
   );
 }

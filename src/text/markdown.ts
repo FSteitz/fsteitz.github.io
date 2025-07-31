@@ -46,8 +46,16 @@ As a passionate developer with extensive experience, I believe in the power of s
 This collection not only reflects my journey in coding but also serves as a valuable resource for fellow developers and tech enthusiasts.
 
 Whether you're a beginner eager to learn or an experienced coder looking for handy utilities, you'll find tools that cater to various skill levels.
-I invite you to explore these creations, discover new ways to streamline your workflow, and join me in navigating the ever-evolving tech landscape.
+I invite you to explore the tools here, discover new ways to streamline your workflow, and join me in navigating the ever-evolving tech landscape.
 Let's embark on this exciting journey together!
+`;
+
+const kotlinPlaygroundPageIntroduction = `Welcome to my Kotlin Playground, where you can effortlessly experiment with Kotlin code targeting both the Java and JavaScript platforms.
+This interactive page allows you to explore the powerful features of Kotlin, speeding up your learning progress and enhancing your development skills.
+
+Start coding now and discover the potential of Kotlin for your projects! Whether you're building backend applications or exploring frontend development, this playground can help you mastering Kotlin.
+
+Backend servers are kindly provided by [JetBrains](https://blog.jetbrains.com/kotlin/2018/04/embedding-kotlin-playground).
 `;
 
 const aboutMePageIntroduction = `Welcome to my corner of the web!
@@ -124,6 +132,18 @@ If special conditions for individual uses of this website deviate from the afore
 In this case, the special terms of use apply in each individual case.
 
 **All rights reserved. Any reproduction or distribution in any medium, in whole or in part, requires the written consent of Florian Steitz.**
+`;
+
+const toolsPage3rdPartyPageContent = `## 3rd-Party Tools
+Discover a selection of small 3rd-party tools integrated into my website that I've found useful over the years.
+
+### My Kotlin Playground: Get Started with Kotlin Coding!
+Kotlin is a modern programming language that seamlessly blends object-oriented and functional programming paradigms, making it a versatile choice for developers.
+With its concise syntax and full interoperability with Java, Kotlin is not only popular for Android app development and server-side applications but also excels in client-side development, allowing you to produce JavaScript that runs efficiently in web browsers.
+
+Ready to dive into Kotlin? Visit my [Kotlin Playground](kotlin/playground) to experiment with its powerful features.
+In the playground, you can write, run, and share Kotlin code effortlessly.
+Explore various examples, test your skills, and unlock the potential of Kotlin for your projects today!
 `;
 
 const privacyPolicyPageContent = `The processing of your data is carried out exclusively on the basis of the applicable legal provisions, particularly the GDPR.
@@ -281,7 +301,18 @@ RUM captures metrics such as load times, interaction times, and other performanc
 By analyzing the collected data, I can make targeted improvements to enhance your user experience.
 
 - **Real-Time Feedback**  
-RUM provides real-time feedback on the performance of my website, allowing me to make timely adjustments as needed.`;
+RUM provides real-time feedback on the performance of my website, allowing me to make timely adjustments as needed.
+`;
+
+const kotlinToJavaHint = `With Kotlin targeting the Java platform, you can leverage all the powerful language features and APIs provided by the JDK, enabling seamless integration and development.
+`;
+
+const kotlinToJavaScriptHint = `When targeting web browsers, Kotlin code does not support APIs provided by the JDK unless they have been re-implemented for the JavaScript environment. However, you can call any JavaScript API directly.
+
+For more information, check out these resources:
+- [Setting up a Kotlin/JS project](https://kotlinlang.org/docs/js-project-setup.html)
+- [Using JavaScript code from Kotlin](https://kotlinlang.org/docs/reference/js-interop.html)
+`;
 
 export const markdownContent = {
     page: {
@@ -291,11 +322,13 @@ export const markdownContent = {
             blogTag: blogTagPageIntroduction,
             blogTagBeyondPageOne: blogTagPageBeyondOneIntroduction,
             blogTagList: blogTagListPageIntroduction,
-            toolsPage: toolsPageIntroduction
+            toolsPage: toolsPageIntroduction,
+            kotlinPlaygroundPage: kotlinPlaygroundPageIntroduction
         },
         content: {
             aboutMePage: aboutMePageIntroduction,
             imprintPage: imprintPageIntroduction,
+            toolsPage3rdParty: toolsPage3rdPartyPageContent,
             privacyPolicy: privacyPolicyPageContent,
             privacySettings: privacySettingsPageContent
         }
@@ -305,6 +338,8 @@ export const markdownContent = {
     },
     hint: {
         missingConsentDecision: missingConsentDecisionHint,
-        cloudflareAnalytics: cloudflareAnalyticsHint
+        cloudflareAnalytics: cloudflareAnalyticsHint,
+        kotlinToJava: kotlinToJavaHint,
+        kotlinToJavaScript: kotlinToJavaScriptHint
     }
 };

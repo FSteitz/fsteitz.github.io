@@ -279,6 +279,13 @@ const privacySettingsPageContent = `Here you can adjust your privacy settings at
 In my [Privacy Policy](/${PRIVACY_POLICY_BASE_PATH}), you will find more information about the data processed by me and my service providers, as well as the purposes of the processing.
 `;
 
+const flomitPageContent = `Florian Steitz and Michael Kornas founded the company in 2017 to provide fast, reliable, and affordable IT services to small and medium-sized enterprises in and around Koblenz.
+However, they refocused their efforts along the way and decided, a little over a year later, to disband their company.
+They also chose to retain a few assets, such as the domain names. That's why this page exists: it served as a landing page for those domains.
+
+If you somehow ended up on this page and are curious, feel free to contact Florian Steitz to learn more.
+`;
+
 const blogRssFeed = `For my blog, there is an [RSS feed](/feeds/blog.xml) that allows you to easily follow my latest posts.
 To use the feed, you will need an RSS reader.
 
@@ -330,7 +337,8 @@ export const markdownContent = {
             imprintPage: imprintPageIntroduction,
             toolsPage3rdParty: toolsPage3rdPartyPageContent,
             privacyPolicy: privacyPolicyPageContent,
-            privacySettings: privacySettingsPageContent
+            privacySettings: privacySettingsPageContent,
+            flomit: flomitPageContent
         }
     },
     rss: {

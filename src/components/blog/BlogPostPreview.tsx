@@ -16,7 +16,7 @@ export const BlogPostPreview = ({ post, className }: { post: CachedPost, classNa
         <div className="aspect-[16/9] relative">
           <Image
             alt={post.title}
-            className="object-cover rounded-2xl border-8 shadow-md shadow-sky-950 transition-transform transform hover:scale-105"
+            className="object-cover rounded-2xl border-4 md:border-8 shadow-md shadow-sky-950 transition-transform transform hover:scale-105"
             src={post.image || "/images/placeholder.webp"}
             fill
           />

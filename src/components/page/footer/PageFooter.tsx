@@ -27,14 +27,15 @@ export const PageFooter = () => {
                 </div>
             </section>
             <hr className="mx-16 my-12" />
-            <section className="w-[80%] flex flex-row items-center justify-between pb-6 mx-auto">
-                <p className="font-semibold">© Copyright {new Date().getFullYear()} {config.website.copyright}</p>
+            <section className="w-[80%] sm:flex sm:flex-row items-center justify-between pb-6 mx-auto">
+                <p className="hidden sm:block font-semibold">© Copyright {new Date().getFullYear()} {config.website.copyright}</p>
                 <div className="flex flex-row items-center justify-between gap-3">
                     <Link className="hover:text-sky-600" href="https://github.com/FSteitz"><FaGithub size={24} /></Link>
                     <Link className="hover:text-sky-600 hidden" href="https://bsky.app/profile/xardex.dev"><FaBluesky size={24} /></Link>
                     <Link className="hover:text-sky-600" href="https://www.linkedin.com/in/florian-steitz-2242aa6b"><FaLinkedin size={24} /></Link>
                     <Link className="hover:text-sky-600" href="https://www.xing.com/profile/Florian_Steitz2"><FaXing size={24} /></Link>
                 </div>
+                <p className="sm:hidden font-semibold mt-10">© Copyright {new Date().getFullYear()} {config.website.copyright}</p>
             </section>
         </footer>
     )

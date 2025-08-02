@@ -1,10 +1,34 @@
+import { config } from "@/config";
+
+import { Metadata } from "next";
+
 import Markdown from "react-markdown";
 
 import KTPlayground from "@/components/kotlin/KTPlayground";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
+import { KOTLIN_PLAYGROUND_BASE_PATH, LOCALE } from "@/lib/constants";
+
 import { markdownContent } from "@/text/markdown";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: `Kotlin Playground: Effortlessly Experiment with Kotlin Code`,
+    description: `Welcome to my Kotlin Playground! Experiment with Kotlin code for Java and JavaScript platforms. Enhance your skills and take your coding to the next level!`,
+    alternates: {
+      canonical: `${config.baseUrl}/${KOTLIN_PLAYGROUND_BASE_PATH}`
+    },
+    openGraph: {
+      title: `Kotlin Playground: Effortlessly Experiment with Kotlin Code`,
+      description: `Welcome to my Kotlin Playground! Experiment with Kotlin code for Java and JavaScript platforms. Enhance your skills and take your coding to the next level!`,
+      url: `${config.baseUrl}/${KOTLIN_PLAYGROUND_BASE_PATH}`,
+      locale: LOCALE,
+      type: "website",
+      images: []
+    }
+  };
+}
 
 export default function KotlinPlayground() {
   return (

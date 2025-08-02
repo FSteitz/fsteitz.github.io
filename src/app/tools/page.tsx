@@ -1,9 +1,31 @@
 import { config } from "@/config";
 
+import { Metadata } from "next";
+
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
+import { LOCALE, TOOLS_BASE_PATH } from "@/lib/constants";
+
 import { markdownContent } from "@/text/markdown";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Discover Software Development Tools for Every Skill Level!",
+    description: "Explore a curated collection of software development tools for all skill levels. Improve your coding skills with resources designed for every developer!",
+    alternates: {
+      canonical: `${config.baseUrl}/${TOOLS_BASE_PATH}`
+    },
+    openGraph: {
+      title: "Discover Software Development Tools for Every Skill Level!",
+      description: "Explore a curated collection of software development tools for all skill levels. Improve your coding skills with resources designed for every developer!",
+      url: `${config.baseUrl}/${TOOLS_BASE_PATH}`,
+      locale: LOCALE,
+      type: "website",
+      images: []
+    }
+  };
+}
 
 export default function Tools() {
   return (

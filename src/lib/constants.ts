@@ -17,4 +17,8 @@ export const IMPRINT_BASE_PATH = "imprint";
 export const PRIVACY_POLICY_BASE_PATH = "privacy-policy"
 export const PRIVACY_SETTINGS_BASE_PATH = "privacy-settings"
 
+export const FLOMIT_BASE_PATH = "flomit"
+
 export const BLOG_POSTS_PER_PAGE = 8;
+
+export const LOCALE = "en_US";

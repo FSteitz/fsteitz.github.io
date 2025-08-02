@@ -1,7 +1,31 @@
+import { config } from "@/config";
+
+import { Metadata } from "next";
+
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
+import { LOCALE, PRIVACY_POLICY_BASE_PATH } from "@/lib/constants";
+
 import { markdownContent } from "@/text/markdown";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: `Privacy Policy for ${config.website.name}'s Website`,
+    description: `Privacy policy for ${config.website.name}'s website. Discover insights, tutorials, and tools in software development to enhance your coding skills!`,
+    alternates: {
+      canonical: `${config.baseUrl}/${PRIVACY_POLICY_BASE_PATH}`
+    },
+    openGraph: {
+      title: `Privacy Policy for ${config.website.name}'s Website`,
+      description: `Privacy policy for ${config.website.name}'s website. Discover insights, tutorials, and tools in software development to enhance your coding skills!`,
+      url: `${config.baseUrl}/${PRIVACY_POLICY_BASE_PATH}`,
+      locale: LOCALE,
+      type: "website",
+      images: []
+    }
+  };
+}
 
 export default function PrivacyPolicy() {
   return (

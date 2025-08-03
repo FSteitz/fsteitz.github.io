@@ -1,5 +1,6 @@
 import { config } from "@/config";
 
+import { Metadata } from "next";
 import Link from "next/link";
 
 import { FaHashtag } from "react-icons/fa";
@@ -10,10 +11,28 @@ import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 import { Button } from "@/components/ui/button";
 
-import { BLOG_TAG_BASE_PATH } from "@/lib/constants";
+import { BLOG_TAG_BASE_PATH, LOCALE } from "@/lib/constants";
 import { wisp } from "@/lib/utils";
 
 import { markdownContent } from "@/text/markdown";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: `Insights from ${config.website.name}: Discover different hashtags`,
+    description: "Explore a variety of engaging articles and tutorials on technology and software engineering, organized by hashtags for easy navigation and valuable insights.",
+    alternates: {
+      canonical: `${config.baseUrl}/${BLOG_TAG_BASE_PATH}`
+    },
+    openGraph: {
+      title: `Insights from ${config.website.name}: Discover different hashtags`,
+      description: "Explore a variety of engaging articles and tutorials on technology and software engineering, organized by hashtags for easy navigation and valuable insights.",
+      url: `${config.baseUrl}/${BLOG_TAG_BASE_PATH}`,
+      locale: LOCALE,
+      type: "website",
+      images: [],
+    }
+  };
+}
 
 export default async function BlogTagList() {
   const result = await wisp.getTags();

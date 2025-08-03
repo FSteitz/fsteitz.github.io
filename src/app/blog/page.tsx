@@ -1,14 +1,34 @@
 import { config } from "@/config";
 
+import { Metadata } from "next";
+
 import { Rss } from "lucide-react";
 
 import { PagedBlogPostPreviewGrid } from "@/components/blog/PagedBlogPostPreviewGrid";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
-import { BLOG_POSTS_PER_PAGE } from "@/lib/constants";
+import { BLOG_BASE_PATH, BLOG_POSTS_PER_PAGE, LOCALE } from "@/lib/constants";
 
 import { markdownContent } from "@/text/markdown";
+
+export async function generateMetadata(): Promise<Metadata> {
+  return {
+    title: "Tech Insights & Tutorials for Developers and Enthusiasts",
+    description: "Discover tutorials, insights, and resources for developers and tech enthusiasts. Join me in exploring the dynamic world of software development and technology!",
+    alternates: {
+      canonical: `${config.baseUrl}/${BLOG_BASE_PATH}`
+    },
+    openGraph: {
+      title: "Tech Insights & Tutorials for Developers and Enthusiasts",
+      description: "Discover tutorials, insights, and resources for developers and tech enthusiasts. Join me in exploring the dynamic world of software development and technology!",
+      url: `${config.baseUrl}/${BLOG_BASE_PATH}`,
+      locale: LOCALE,
+      type: "website",
+      images: []
+    }
+  };
+}
 
 export default function Blog() {
   return (

@@ -1,5 +1,6 @@
 import { config } from "@/config";
 
+import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { Rss } from "lucide-react";
@@ -11,14 +12,14 @@ import { BlogPostTags } from "@/components/blog/BlogPostTags";
 import { PageShareButtons } from "@/components/social/PageShareButtons";
 
 import { BlogPostCache } from "@/lib/blog-post-cache";
-import { BLOG_BASE_PATH } from "@/lib/constants";
+import { BLOG_BASE_PATH, LOCALE } from "@/lib/constants";
 import { SlugPathParam } from "@/lib/types";
 import { wisp } from "@/lib/utils";
 
 import { PageFrame } from "@/components/page/frame/PageFrame";
 import { markdownContent } from "@/text/markdown";
 
-export async function generateMetadata(props: { params: Promise<SlugPathParam> }) {
+export async function generateMetadata(props: { params: Promise<SlugPathParam> }): Promise<Metadata> {
   const params = await props.params;
   const { slug } = params;
 
@@ -38,8 +39,11 @@ export async function generateMetadata(props: { params: Promise<SlugPathParam> }
     },
     openGraph: {
       title,
-      description,
-      images: [image]
+      description: description || "",
+      images: image ? [image] : undefined,
+      url: `${config.baseUrl}/${BLOG_BASE_PATH}/${slug}`,
+      locale: LOCALE,
+      type: "article"
     }
   };
 }

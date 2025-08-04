@@ -292,6 +292,13 @@ To use the feed, you will need an RSS reader.
 [Subscribe](/feeds/blog.xml) to my feed and never miss any of my exciting posts again!
 `;
 
+const cookieConsentHint = `To provide you with the best possible experience, technologies such as Cloudflare RUM are used to collect anonymized statistics.
+This data helps me better tailor my content to your needs and improve the usability of my website.
+\n
+For more information, you can read my [Privacy Policy](/${PRIVACY_POLICY_BASE_PATH}).
+You can change your decision at any time in the [Privacy Settings](/${PRIVACY_SETTINGS_BASE_PATH}).
+`;
+
 const missingConsentDecisionHint = `Your privacy settings cannot currently be changed.
 You may not have confirmed the popup with the privacy settings yet.
 If you have, reloading this page might help.
@@ -345,6 +352,7 @@ export const markdownContent = {
         blog: blogRssFeed
     },
     hint: {
+        cookieConsent: cookieConsentHint,
         missingConsentDecision: missingConsentDecisionHint,
         cloudflareAnalytics: cloudflareAnalyticsHint,
         kotlinToJava: kotlinToJavaHint,

@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { ThemeProvider } from "next-themes";
 import { Geist, Geist_Mono } from "next/font/google";
 
+import CookieConsentPopup from "@/components/consent/CookieConsentPopup";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -30,6 +32,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           disableTransitionOnChange>
           {children}
         </ThemeProvider>
+        <CookieConsentPopup />
       </body>
     </html>
   );

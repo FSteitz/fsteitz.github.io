@@ -33,8 +33,6 @@ jobs:
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v4
-        with:
-          static_site_generator: next
 
       - name: Build website
         run: npm run build

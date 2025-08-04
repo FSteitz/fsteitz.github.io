@@ -3,7 +3,7 @@ import { config } from "@/config";
 import { Metadata } from "next";
 
 import { BlogPostCache } from "@/lib/blog-post-cache";
-import { BLOG_POSTS_PER_PAGE, BLOG_TAG_BASE_PATH, LOCALE, PAGE_PATH_PART } from "@/lib/constants";
+import { BLOG_POSTS_PER_PAGE, BLOG_TAG_BASE_PATH, IMG_OG_BLOG, LOCALE, PAGE_PATH_PART } from "@/lib/constants";
 import { computeIfAbsent, generateStaticParamsForPagnination, maybeAddPageIndicator, onPageOneOrElse, toPageNumber } from "@/lib/utils";
 
 import { createPageContent } from "../../pageContent";
@@ -30,7 +30,7 @@ export async function generateMetadata(props: { params: Promise<PathParams> }): 
             url: `${config.baseUrl}/${onPageOneOrElse(pageNumber, () => `${BLOG_TAG_BASE_PATH}/${slug}`, () => `${BLOG_TAG_BASE_PATH}/${slug}/${PAGE_PATH_PART}${page}`)}`,
             locale: LOCALE,
             type: "website",
-            images: []
+            images: [IMG_OG_BLOG]
         }
     };
 }

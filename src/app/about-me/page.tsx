@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
-import { ABOUT_ME_BASE_PATH, LOCALE } from "@/lib/constants";
+import { ABOUT_ME_BASE_PATH, IMG_OG_ABOUT_ME, LOCALE } from "@/lib/constants";
 
 import { markdownContent } from "@/text/markdown";
 
@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${config.baseUrl}/${ABOUT_ME_BASE_PATH}`,
       locale: LOCALE,
       type: "website",
-      images: []
+      images: [IMG_OG_ABOUT_ME]
     }
   };
 }

@@ -2,7 +2,7 @@ import { config } from "@/config";
 
 import { Metadata } from "next";
 
-import { BLOG_TAG_BASE_PATH, LOCALE } from "@/lib/constants";
+import { BLOG_TAG_BASE_PATH, IMG_OG_BLOG, LOCALE } from "@/lib/constants";
 import { SlugPathParam } from "@/lib/types";
 import { wisp } from "@/lib/utils";
 
@@ -24,7 +24,7 @@ export async function generateMetadata(props: { params: Promise<SlugPathParam> }
       url: `${config.baseUrl}/${BLOG_TAG_BASE_PATH}/${slug}`,
       locale: LOCALE,
       type: "website",
-      images: []
+      images: [IMG_OG_BLOG]
     }
   };
 }

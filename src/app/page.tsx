@@ -6,7 +6,7 @@ import { PagedBlogPostPreviewGrid } from "@/components/blog/PagedBlogPostPreview
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
-import { LOCALE } from "@/lib/constants";
+import { IMG_OG_DEFAULT, LOCALE } from "@/lib/constants";
 
 import { markdownContent } from "@/text/markdown";
 
@@ -23,7 +23,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${config.baseUrl}`,
       locale: LOCALE,
       type: "website",
-      images: []
+      images: [IMG_OG_DEFAULT]
     }
   };
 }

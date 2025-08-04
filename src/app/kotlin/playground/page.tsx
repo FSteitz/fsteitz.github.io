@@ -8,7 +8,7 @@ import KTPlayground from "@/components/kotlin/KTPlayground";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
-import { KOTLIN_PLAYGROUND_BASE_PATH, LOCALE } from "@/lib/constants";
+import { IMG_OG_DEFAULT, KOTLIN_PLAYGROUND_BASE_PATH, LOCALE } from "@/lib/constants";
 
 import { markdownContent } from "@/text/markdown";
 
@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${config.baseUrl}/${KOTLIN_PLAYGROUND_BASE_PATH}`,
       locale: LOCALE,
       type: "website",
-      images: []
+      images: [IMG_OG_DEFAULT]
     }
   };
 }

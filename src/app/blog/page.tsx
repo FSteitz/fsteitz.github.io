@@ -8,7 +8,7 @@ import { PagedBlogPostPreviewGrid } from "@/components/blog/PagedBlogPostPreview
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
-import { BLOG_BASE_PATH, BLOG_POSTS_PER_PAGE, LOCALE } from "@/lib/constants";
+import { BLOG_BASE_PATH, BLOG_POSTS_PER_PAGE, IMG_OG_BLOG, LOCALE } from "@/lib/constants";
 
 import { markdownContent } from "@/text/markdown";
 
@@ -25,7 +25,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${config.baseUrl}/${BLOG_BASE_PATH}`,
       locale: LOCALE,
       type: "website",
-      images: []
+      images: [IMG_OG_BLOG]
     }
   };
 }

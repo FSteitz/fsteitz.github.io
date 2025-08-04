@@ -11,7 +11,7 @@ import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 import { Button } from "@/components/ui/button";
 
-import { BLOG_TAG_BASE_PATH, LOCALE } from "@/lib/constants";
+import { BLOG_TAG_BASE_PATH, IMG_OG_BLOG, LOCALE } from "@/lib/constants";
 import { wisp } from "@/lib/utils";
 
 import { markdownContent } from "@/text/markdown";
@@ -29,7 +29,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${config.baseUrl}/${BLOG_TAG_BASE_PATH}`,
       locale: LOCALE,
       type: "website",
-      images: [],
+      images: [IMG_OG_BLOG]
     }
   };
 }

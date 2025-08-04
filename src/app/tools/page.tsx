@@ -5,7 +5,7 @@ import { Metadata } from "next";
 import { MarkdownProse } from "@/components/markdown/MarkdownProse";
 import { PageFrame } from "@/components/page/frame/PageFrame";
 
-import { LOCALE, TOOLS_BASE_PATH } from "@/lib/constants";
+import { IMG_OG_TOOLS, LOCALE, TOOLS_BASE_PATH } from "@/lib/constants";
 
 import { markdownContent } from "@/text/markdown";
 
@@ -22,7 +22,7 @@ export async function generateMetadata(): Promise<Metadata> {
       url: `${config.baseUrl}/${TOOLS_BASE_PATH}`,
       locale: LOCALE,
       type: "website",
-      images: []
+      images: [IMG_OG_TOOLS]
     }
   };
 }

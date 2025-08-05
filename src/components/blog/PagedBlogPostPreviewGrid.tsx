@@ -21,7 +21,7 @@ export async function PagedBlogPostPreviewGrid({ posts, postLimit, page, title, 
   }
 
   return (
-    <section className="px-16 mt-16 md:mt-32">
+    <section className="px-8 md:px-16 mt-16 md:mt-32">
       {title &&
         <h2 className="h-10 lg:h-20 text-3xl sm:text-4xl md:text-6xl font-semi-bold text-center mb-8">{title}</h2>
       }
